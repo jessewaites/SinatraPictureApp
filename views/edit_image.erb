@@ -1,0 +1,28 @@
+<form action="/galleries/<%= @gallery.id %>/images/<%= @image.id %>" method="POST"> 
+  <input type="hidden" name="_method" value="PATCH"> 
+  <div> <input type="text" name="image[name]" placeholder="Name" value="<%= @image.name %>"> </div> 
+  <div> <input type="text" name="image[description]" placeholder="Description" value="<%= @image.description %>"> </div> 
+  <div> <input type="text" name="image[url]" placeholder="URL" value="<%= @image.url %>"> </div> 
+  <div> <input type="submit" value="Update Image"> </div> </form>
+
+
+
+<!-- <h3>Edit Image.</h3>
+<form action="/galleries/<%= @gallery_id %>/images/" method="POST">
+  <input type="hidden" name="_method" value="PATCH">
+  <div>
+  <label for="image_name">Name</label>
+  <input type="text" name="image[name]" id="image_name">
+</div>
+<div>
+  <label for="image_description">Description</label>
+  <input type="text" name="image[description]" id="image_description">
+</div>
+<div>
+  <label for="image_url">URL</label>
+  <input type="text" name="image[url]" id="image_url">
+</div>
+<div>
+  <input type="submit" value="create">
+</div>  
+</form> -->
